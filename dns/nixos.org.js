@@ -29,7 +29,10 @@ D("nixos.org",
 		]
 	}),
 	DMARC_BUILDER({
-		policy: "none",
+		policy: "reject",
+		rua: [
+			"mailto:dmarc@nixos.org"
+		]
 	}),
 
 	// discourse
